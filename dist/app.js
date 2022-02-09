@@ -12,6 +12,4 @@ app.use((0, cors_1.default)()); //Configuracion de CORS
 //================================================================================
 //=========================== Rutas ==============================================
 app.use("/weather-api", require("./routes/weather.route"));
-app.listen(process.env.PORT, () => {
-    console.log("servidor corriendo: " + process.env.PORT);
-});
+app.listen(process.env.PORT);
